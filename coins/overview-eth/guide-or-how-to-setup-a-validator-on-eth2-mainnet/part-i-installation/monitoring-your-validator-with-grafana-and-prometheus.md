@@ -261,11 +261,11 @@ scrape_configs:
    - job_name: 'Lighthouse'
      metrics_path: /metrics
      static_configs:
-       - targets: ['localhost:5054']
+       - targets: ['localhost:8008']
    - job_name: 'validators'
      metrics_path: /metrics
      static_configs:
-       - targets: ['localhost:5064']
+       - targets: ['localhost:8009']
    - job_name: 'nethermind'
      static_configs:
        - targets: ['localhost:6060']
